@@ -1,0 +1,111 @@
+body, html, section, nav, section, h1 {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+body {
+    min-height: 5000px;
+}
+section {
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+.hero {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background: blue;
+}
+.hero-desc {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 15%;
+    padding-top: 17%;
+}
+.col-3 {
+    width: 50%;
+    background: white;
+}
+.hero-img {
+    width: 200px;
+    height: 200px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-size: 72px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 24px;
+}
+.bg-text {
+    position: absolute;
+    top: 15%;
+    left: 8%;
+}
+.display-1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 178px;
+    opacity: 0.05; 
+    line-height: 1.1;
+}
+.bone-btn {
+    padding: 12px 36px;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    background: #EEAA27;
+    width: 50%;
+    z-index: 1;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.20);
+    transition: 0.3s;
+    border-radius: 2px;    
+
+}
+.bone-btn:hover {
+    -webkit-box-shadow: 0px 30px 40px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 30px 40px rgba(0,0,0,0.15);
+    box-shadow: 0px 30px 40px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.light-text {
+    font-size: 24px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.hero-img {
+    position: absolute;
+    top: 10%;
+    right: 13%;
+    width: 450px;
+    height: 570px;
+    background: red;
+    -webkit-box-shadow: 20px 20px 40px -8px rgba(0,0,0,0.25);
+    -moz-box-shadow: 20px 20px 40px -8px rgba(0,0,0,0.25);
+    box-shadow: 20px 20px 40px -8px rgba(0,0,0,0.25);    
+}
+
+.hero-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;    
+}
