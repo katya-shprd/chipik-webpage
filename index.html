@@ -10,6 +10,12 @@
 
 </head>
 
+<script>
+
+changeImg = (src) => {
+    document.getElementById("big-picture").src = src
+}
+</script>
 <body>
     <nav></nav> 
 
@@ -17,7 +23,7 @@
         <div class="hero">
             <div class="col-3 hero-desc">
                 <h1>Hi there! <br>I am Chipik</h1>
-                <p>Nice to see you</p>
+                <h2>Nice to see you</h2>
                 
                 <button class="bone-btn"><span class="light-text">Greet me</span></button>
                          
@@ -36,6 +42,65 @@
 
     </section>
 
+    <section>
+        <div class="container">
+            <div class="col-4">
+                <h1 class="active-text">About me</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a rutrum elit. Pellentesque euismod urna sit amet nibh aliquet elementum. Donec ut dui non leo mattis elementum. Mauris ipsum enim, ultrices at faucibus quis, sollicitudin quis dolor. Maecenas sed eleifend dolor, nec facilisis sapien.</p><p>Sed ut placerat sapien, vel aliquet lectus. Quisque placerat tellus quis leo tempus, nec posuere lectus malesuada. Vestibulum enim dolor, pellentesque quis porta quis, pharetra vel mauris. Mauris eu ex in sem porttitor lobortis. Ut non pharetra nisl, imperdiet tincidunt augue. Cras volutpat eu lacus eu venenatis.</p> <p>— Chipie-Pachipie</p>
+
+            </div>
+       
+        <div class="col-2">
+            <div class="paw-prints">
+                <img src="images/paw-prints.jpg" alt="Paw prints">
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section>
+    <div class="section-gallery">  
+    <h3>Check out some photos of me!</h3>    
+        <div class="container">
+            <div class="col-4">
+                <div class="big-pic">
+                    <img id="big-picture" src="images/chip5.JPG" alt="gallery">
+                </div>
+            </div>
+            
+            <div class="col-2">
+                <div class="gallery-container">
+                    <div class="gallery">
+                        <div class="square">
+                            <img onclick="changeImg(this.src)" src="images/chip2.JPG" alt="gallery">
+                        </div>
+                        
+                        <div class="square">
+                            <img onclick="changeImg(this.src)" src="images/chip3.JPG" alt="gallery">
+                        </div>
+                        
+                        <div class="square">
+                            <img onclick="changeImg(this.src)" src="images/chip4.JPG" alt="gallery">
+                        </div>
+                        
+                        <div class="square">
+                            <img onclick="changeImg(this.src)" src="images/chip5.JPG" alt="gallery">
+                        </div>
+
+                        <div class="square">
+                            <img onclick="changeImg(this.src)" src="images/chip2.JPG" alt="gallery">
+                        </div>
+                            
+                        <div class="square">
+                            <img onclick="changeImg(this.src)" src="images/chip3.JPG" alt="gallery">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    </section>
 </body>
 
 </html>
