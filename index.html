@@ -15,17 +15,36 @@
 changeImg = (src) => {
     document.getElementById("big-picture").src = src
 }
+
+function myFunction(x) {
+    x.classList.toggle("change");
+    var element = document.getElementById("hamburger-nav");
+    element.classList.toggle("hidden");
+}
 </script>
 <body>
-    <nav></nav> 
 
-    <section>
+<div class="container-menu" onclick="myFunction(this)">
+    <div class="hamburger">
+        <div class="bar1"></div>
+        <div class="bar2"></div>    
+        <div class="bar3"></div>
+    </div>
+   
+    <div id="hamburger-nav" class="topnav hidden">
+        <a href="#front-page">Home</a>
+        <a href="#about">About me</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact me</a>
+    </div>
+</div>
+    <section id="front-page">
         <div class="hero">
             <div class="col-3 hero-desc">
                 <h1>Hi there! <br>I am Chipik</h1>
                 <h2>Nice to see you</h2>
                 
-                <button class="bone-btn"><span class="light-text">Greet me</span></button>
+                <a href="#contact-form"><button class="bone-btn"><span class="light-text">Contact me</span></button></a>
                          
             <div class="bg-text">
                 <span class="display-1">GOOD <br>BOY</span>
@@ -42,12 +61,11 @@ changeImg = (src) => {
 
     </section>
 
-    <section>
+    <section id="about">
         <div class="container">
             <div class="col-4">
                 <h1 class="active-text">About me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a rutrum elit. Pellentesque euismod urna sit amet nibh aliquet elementum. Donec ut dui non leo mattis elementum. Mauris ipsum enim, ultrices at faucibus quis, sollicitudin quis dolor. Maecenas sed eleifend dolor, nec facilisis sapien.</p><p>Sed ut placerat sapien, vel aliquet lectus. Quisque placerat tellus quis leo tempus, nec posuere lectus malesuada. Vestibulum enim dolor, pellentesque quis porta quis, pharetra vel mauris. Mauris eu ex in sem porttitor lobortis. Ut non pharetra nisl, imperdiet tincidunt augue. Cras volutpat eu lacus eu venenatis.</p> <p>— Chipie-Pachipie</p>
-
+                <p>Hello friend, I am Chipik. I am a playful and fluffy doggo with awesome and big ears that hear everything that happens around. Whenever I hear some bizarre sound, of course, I warn my human. However, my human usually gets upset and angry as I am small, but my voice is loud. I am actually proud of my voice. Dogs on the street usually afraid of me as I pass by. </p> <p>Actually, I am a cute boy, I really love to go for a walk. Whenever you will ask me if I want to go for a walk, I will immediately start barking in a high voice, running around and jumping on highest objects. </p><p>By the way, I have a lot of interesting toys. But they are only mine! These are a small brown mouse, yellow juice bottle cap, small red rubber dog, which makes weird loud sounds every time I bite it, there is also a blue Angry Bird. I usually protect all of my toys, but sometimes I allow my human to look at them. Maybe touch. But not much. They are mine, after all.</p><p>I also really love to steal. Actually, that’s how I got all of my toys. Except for the red dog, which was a present, because I’m a good boy. But my human always tells me that my best theft was her heart. Woof!</p>
             </div>
        
         <div class="col-2">
@@ -59,13 +77,12 @@ changeImg = (src) => {
         </div>
     </section>
 
-    <section>
-    <div class="section-gallery">  
+    <section id="gallery"> 
     <h3>Check out some photos of me!</h3>    
         <div class="container">
             <div class="col-4">
                 <div class="big-pic">
-                    <img id="big-picture" src="images/chip5.JPG" alt="gallery">
+                    <img id="big-picture" src="images/chip1.JPG" alt="gallery">
                 </div>
             </div>
             
@@ -89,17 +106,64 @@ changeImg = (src) => {
                         </div>
 
                         <div class="square">
-                            <img onclick="changeImg(this.src)" src="images/chip2.JPG" alt="gallery">
+                            <img onclick="changeImg(this.src)" src="images/chip6.JPG" alt="gallery">
                         </div>
                             
                         <div class="square">
-                            <img onclick="changeImg(this.src)" src="images/chip3.JPG" alt="gallery">
+                            <img onclick="changeImg(this.src)" src="images/chip7.JPG" alt="gallery">
                         </div>
+                       
                     </div>
                 </div>
             </div>
         </div>
-    </div>  
+    <div class="scroll-right">
+            <h4>Scroll down to view more</h4>
+    </div>
+    <div class="gallery-bg">
+        <svg width="1440" height="1056" viewBox="0 0 1440 1056" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0L1442 150V1056L0 906V0Z" transform="translate(-2)" fill="#F0F0F0"/>
+            </svg>
+    </div>
+    </section>
+
+    <section id="contact">
+            <h5>Do you have something in mind?</h5>
+        <div class="container">
+            <div class="col-6">
+                    <p>I am a cute dog, but I do not have many dog friends. So that, if you want to ask me some questions or discuss good walking routes in Helsinki, feel free to do so. I enjoy having friendly dog chat, so you can write me at any time.</p>
+                    <p>My human also makes some websites and if you need one, she can do so. Have a perfect day, by the way. Woof-woof!</p>
+                    
+                        
+            </div>
+        </div>
+    </section>
+    <section id="contact-form">
+            <div class="col-1 centered">
+                <div class="form-1">
+                    <img class="pattern" src="images/pattern.jpeg" alt="bg">
+                </div>
+            </div>
+            <div class="col-1 centered">
+                <div class="circle">
+                    <img class="circle-pic" src="images/chip-circle.png" alt="Chipik">
+                </div>
+                
+            </div>
+
+            <div class="col-1 centered">
+                <form class="form-2">
+                    <div class="contact-me"><span class="contact-me">Contact me</span></div>
+                    <input class="form-name" type="text" placeholder="Name"/>
+                    <textarea class="form-text" type="text" placeholder="Your message"></textarea>
+                    <div class="centered">
+                        <button class="contact-btn"><span class="light-text">Submit</span></button>
+                    </div>
+                </form>
+            </div>
+       
+            <span class="dark-text centered">Made with 💙  by Ekaterina Povarenko</span>
+    
     </section>
 </body>
 
